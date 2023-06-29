@@ -1506,6 +1506,36 @@
       "width": 1300.00
     },
     {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "PBIP_Test_Page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection9218746984b25f3c8c0c",
+      "ordinal": 12,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"b257b2e15f4ec1798cde\",\"layouts\":[{\"id\":0,\"position\":{\"x\":654.8743718592964,\"y\":44.62311557788944,\"z\":0,\"width\":547.537688442211,\"height\":611.4572864321608}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"2.DateKey.Date (bins)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Transient_Calcs.T Transactions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"2.DateKey\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transient_Calcs\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date (bins)\"},\"Name\":\"2.DateKey.Date (bins)\",\"NativeReferenceName\":\"Date (bins)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"T Transactions\"},\"Name\":\"Transient_Calcs.T Transactions\",\"NativeReferenceName\":\"T Transactions\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date (bins)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 611.46,
+          "width": 547.54,
+          "x": 654.87,
+          "y": 44.62,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bff2a04a13711a9b4175\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32.914572864321606,\"y\":44.97487437185929,\"z\":1,\"width\":547.537688442211,\"height\":611.4572864321608}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Transient_Calcs.Revenue\"}],\"Category\":[{\"queryRef\":\"2.DateKey.Date (bins)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transient_Calcs\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"2.DateKey\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Revenue\"},\"Name\":\"Transient_Calcs.Revenue\",\"NativeReferenceName\":\"Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date (bins)\"},\"Name\":\"2.DateKey.Date (bins)\",\"NativeReferenceName\":\"Date (bins)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date (bins)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 611.46,
+          "width": 547.54,
+          "x": 32.91,
+          "y": 44.97,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
       "config": "{\"relationships\":[{\"source\":\"72eee2a5ae795be4021e\",\"target\":\"0b8b45775431045d0c86\",\"type\":1},{\"source\":\"0b8b45775431045d0c86\",\"target\":\"72eee2a5ae795be4021e\",\"type\":1}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}",
       "displayName": "Summary",
       "displayOption": 2,
