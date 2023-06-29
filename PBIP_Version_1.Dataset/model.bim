@@ -46604,17 +46604,6 @@
             "expression": "[T ATPD]-[T ATPD Exits]",
             "formatString": "0",
             "lineageTag": "0afe48bb-afed-431e-a9e7-72f501c5d3a6"
-          },
-          {
-            "name": "Revenue(New)",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": "sum('Transient All'[Revenue])*2",
-            "lineageTag": "af1b263b-5d4a-43f1-8c63-73982b0df4f1"
           }
         ],
         "partitions": [
