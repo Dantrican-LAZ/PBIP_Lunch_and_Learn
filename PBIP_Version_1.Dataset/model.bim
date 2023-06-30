@@ -22193,7 +22193,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Transient_Calcs",
-                    "ConceptualProperty": "Revenue"
+                    "ConceptualProperty": "Revenue(New)"
                   }
                 },
                 "State": "Generated",
@@ -36017,10 +36017,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -36448,10 +36444,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -37392,10 +37384,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -37952,10 +37940,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -42652,10 +42636,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -43421,10 +43401,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -44600,10 +44576,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -44931,10 +44903,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -45162,10 +45130,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -45812,10 +45776,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -46249,7 +46209,7 @@
         "lineageTag": "d6e59805-09ed-44ad-a348-0ec4a4856a5e",
         "measures": [
           {
-            "name": "Revenue",
+            "name": "Revenue(New)",
             "changedProperties": [
               {
                 "property": "FormatString"
@@ -46277,7 +46237,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "CALCULATE([Revenue],DATESYTD('2.DateKey'[Date]))",
+            "expression": "CALCULATE([Revenue(New)],DATESYTD('2.DateKey'[Date]))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "66c18cfa-f5d0-4c1b-8d7c-81849bf65d1f"
           },
@@ -46299,7 +46259,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "[Revenue]/[T Transactions]",
+            "expression": "[Revenue(New)]/[T Transactions]",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "9044b0b6-a7ab-4540-a2b7-38ad2a552d8e"
           },
@@ -46343,7 +46303,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "[Revenue]/COUNT('2.DateKey'[Date])",
+            "expression": "[Revenue(New)]/COUNT('2.DateKey'[Date])",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "2d085bab-2f0d-4a0c-b80e-f8e085f6bad1"
           },
@@ -46409,7 +46369,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "CALCULATE([Revenue],filter('2.DateKey','2.DateKey'[Week Current]=0))",
+            "expression": "CALCULATE([Revenue(New)],filter('2.DateKey','2.DateKey'[Week Current]=0))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "afac7f5e-361b-4f48-8203-372d37ed0f35"
           },
@@ -46420,7 +46380,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "CALCULATE([Revenue],filter('2.DateKey','2.DateKey'[Week Current]=1))",
+            "expression": "CALCULATE([Revenue(New)],filter('2.DateKey','2.DateKey'[Week Current]=1))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "a18277f0-ab86-4df8-9ca2-d020b79f0d41"
           },
@@ -46464,7 +46424,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "CALCULATE([Revenue],DATESMTD('2.DateKey'[Date]))",
+            "expression": "CALCULATE([Revenue(New)],DATESMTD('2.DateKey'[Date]))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "17588f82-d4da-4c17-87a0-147ce9543fd2"
           },
@@ -46475,7 +46435,7 @@
                 "property": "FormatString"
               }
             ],
-            "expression": "CALCULATE([Revenue],DATEADD(FILTER(DATESMTD('2.DateKey'[Date]),'2.DateKey'[Date] <TODAY()),-1,MONTH))",
+            "expression": "CALCULATE([Revenue(New)],DATEADD(FILTER(DATESMTD('2.DateKey'[Date]),'2.DateKey'[Date] <TODAY()),-1,MONTH))",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "lineageTag": "c244c893-cef1-44cd-96b9-0c7dd0cba12c"
           },
