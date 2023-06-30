@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.42\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU09\",\"version\":\"5.37\",\"type\":2},\"customTheme\":{\"name\":\"LAZParkingV412527298772963125.json\",\"version\":\"5.39\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"allowDataPointLassoSelect\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.42\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU09\",\"version\":\"5.37\",\"type\":2},\"customTheme\":{\"name\":\"LAZParkingV412527298772963125.json\",\"version\":\"5.39\",\"type\":1}},\"activeSectionIndex\":12,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"allowDataPointLassoSelect\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "filters": "[{\"name\":\"Filtera71ce751129d0274743b\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"2.DateKey\"}},\"Property\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"2.DateKey\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2017L\"}}],[{\"Literal\":{\"Value\":\"2018L\"}}],[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},{\"name\":\"Filtera09bd7f0566b8d046219\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"TimePivot\"}},\"Property\":\"Hour\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"TimePivot\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Hour\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
   "layoutOptimization": 0,
   "resourcePackages": [
@@ -38,6 +38,27 @@
     }
   ],
   "sections": [
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection15ca4c0ea57928bedb9c",
+      "ordinal": 12,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"fe1773d1d2cee1788ee3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":190.4935459377373,\"y\":185.63401670463176,\"z\":0,\"width\":808.6256643887624,\"height\":363.4927866362946,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"2.DateKey.Monthly\",\"active\":true}],\"Y\":[{\"queryRef\":\"Transient_Calcs.Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"2.DateKey\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transient_Calcs\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Monthly\"},\"Name\":\"2.DateKey.Monthly\",\"NativeReferenceName\":\"Monthly\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Revenue\"},\"Name\":\"Transient_Calcs.Revenue\",\"NativeReferenceName\":\"Revenue\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 363.49,
+          "width": 808.63,
+          "x": 190.49,
+          "y": 185.63,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
     {
       "config": "{\"relationships\":[{\"source\":\"26f8a0ec287de09dece6\",\"target\":\"fc3f6807ec85da7f6845\",\"type\":1},{\"source\":\"26f8a0ec287de09dece6\",\"target\":\"4d3edb9dab4b9f206d0e\",\"type\":1},{\"source\":\"4d3edb9dab4b9f206d0e\",\"target\":\"fc3f6807ec85da7f6845\",\"type\":1},{\"source\":\"4d3edb9dab4b9f206d0e\",\"target\":\"26f8a0ec287de09dece6\",\"type\":1},{\"source\":\"fc3f6807ec85da7f6845\",\"target\":\"26f8a0ec287de09dece6\",\"type\":1},{\"source\":\"fc3f6807ec85da7f6845\",\"target\":\"4d3edb9dab4b9f206d0e\",\"type\":1},{\"source\":\"5a772a255338b73947c4\",\"target\":\"4d3edb9dab4b9f206d0e\",\"type\":1},{\"source\":\"5a772a255338b73947c4\",\"target\":\"fc3f6807ec85da7f6845\",\"type\":1},{\"source\":\"5a772a255338b73947c4\",\"target\":\"26f8a0ec287de09dece6\",\"type\":1},{\"source\":\"2ec15b0b51ab197dea58\",\"target\":\"fc3f6807ec85da7f6845\",\"type\":1},{\"source\":\"2ec15b0b51ab197dea58\",\"target\":\"26f8a0ec287de09dece6\",\"type\":1},{\"source\":\"2ec15b0b51ab197dea58\",\"target\":\"4d3edb9dab4b9f206d0e\",\"type\":1}],\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
       "displayName": "Transient & Monthly Analysis",
